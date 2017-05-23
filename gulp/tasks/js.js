@@ -190,7 +190,7 @@ function bundleJs(browserifyOptions, npmPackages){
         const b = browserify(browserifyOptions || {}) // pass options
             .add(file.path) // this file
             .transform(babelify, { // run it through babel, for es6 transpiling
-                presets: [ "es2015", "react" ],
+                presets: [ "es2015" ],
                 plugins: [ "transform-object-rest-spread", "transform-class-properties" ]
             });
 
