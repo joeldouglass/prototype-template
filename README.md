@@ -1,1 +1,6 @@
-## Hello, React!
+## Prototype Template
+
+```bash
+$ npm install
+$ gulp
+```
