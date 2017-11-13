@@ -23,7 +23,7 @@ module.exports = function jsTask(config, env){
         // browserify options
         browserify: {
             // enable sourcemaps for development
-            debug: env.development()
+            debug: !env.production()
         },
 
         // Add new entry javascript files here
